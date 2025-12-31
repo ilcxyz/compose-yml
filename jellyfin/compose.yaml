@@ -1,0 +1,13 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    network_mode: 'host'  # 使用宿主网络，方便 DLNA、远程访问
+    volumes:
+      - ./jellyfin/config:/config
+      - ./jellyfin/cache:/cache
+    devices:
+      - /dev/dri:/dev/dri  # Intel/NVIDIA 硬件转码支持
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
