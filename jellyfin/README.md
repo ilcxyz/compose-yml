@@ -5,10 +5,8 @@ Project structure:
 ```
 .
 ├── compose.yaml
-├── app
-    ├── Dockerfile
-    ├── requirements.txt
-    └── manage.py
+├── config
+├── config
 
 ```
 
