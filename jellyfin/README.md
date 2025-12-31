@@ -6,7 +6,7 @@ Project structure:
 .
 ├── compose.yaml
 ├── config
-├── config
+├── cache
 
 ```
 
